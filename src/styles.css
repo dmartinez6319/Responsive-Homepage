@@ -6,13 +6,21 @@
 }
 
 body {
-    padding-top: 30px;
-    padding-bottom: 30px;
+
     background-color: lightcyan;
+}
+
+a:visited {
+    all: unset;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     background-color: blue;
+    padding-top: 30px;
 }
 
 .top-container {
@@ -21,7 +29,6 @@ header {
     margin-left: 50px;
     background-color: aquamarine;
     align-items: center;
-
     
 }
 
@@ -147,4 +154,45 @@ main {
 
 footer {
     background-color: green;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bottom-container {
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.bottom-container > img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-icons {
+    font-size: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-info-icon {
+    display: flex;
+    gap: .5rem;
+
+}
+
+.contact-info-icon > .alt-icon {
+    color: white;
 }
