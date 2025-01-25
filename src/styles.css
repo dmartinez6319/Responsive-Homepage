@@ -176,10 +176,11 @@ footer {
     margin-left: 50px;
     display: flex;
     justify-content: center;
-    gap: 15rem;
+    gap: 15vw;
 }
 
 .bottom-container > img {
+    min-width: 250px;
     height: 500px;
     object-fit: cover;
 }
@@ -209,4 +210,17 @@ footer {
 
 .contact-info-icon > .alt-icon {
     color: white;
+}
+
+@media (max-width: 800px) {
+    .bottom-container {
+    gap: 1rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .bottom-container {
+    flex-direction: column;
+    gap: 2rem;
+    }
 }
